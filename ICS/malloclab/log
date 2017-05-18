@@ -1,0 +1,1545 @@
+Measuring performance with a cycle counter.
+Processor clock rate ~= 2260.9 MHz
+before place
+free block pos: 0x800000008, header: 0x40000, next: 0x0, prev: 0x0, foot: 0x40000
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x200
+used block pos: 0x800000008, header: 0x211, next: 0x0, prev: 0x0, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+block: 0x800000218
+end check
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0xa8b8a0fa409d624d, prev: 0x5dd631b4ff8fd5e2, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+block: 0x800000218
+end check
+start remove_free_block
+block: 0x800000218
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0xa8b8a0fa409d624d, prev: 0x5dd631b4ff8fd5e2, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x211, next: 0xa8b8a0fa409d624d, prev: 0x5dd631b4ff8fd5e2, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x80
+used block pos: 0x800000008, header: 0x211, next: 0xa8b8a0fa409d624d, prev: 0x5dd631b4ff8fd5e2, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+block: 0x8000002a8
+end check
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0xa8b8a0fa409d624d, prev: 0x5dd631b4ff8fd5e2, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0xa1f6d94b963e0b3b, prev: 0x14704f8a5d791845, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+block: 0x8000002a8
+end check
+start remove_free_block
+block: 0x8000002a8
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0xa8b8a0fa409d624d, prev: 0x5dd631b4ff8fd5e2, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0xa1f6d94b963e0b3b, prev: 0x14704f8a5d791845, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x211, next: 0xa8b8a0fa409d624d, prev: 0x5dd631b4ff8fd5e2, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0xa1f6d94b963e0b3b, prev: 0x14704f8a5d791845, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x280
+used block pos: 0x800000008, header: 0x211, next: 0xa8b8a0fa409d624d, prev: 0x5dd631b4ff8fd5e2, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0xa1f6d94b963e0b3b, prev: 0x14704f8a5d791845, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+start free
+start coalesce
+block: 0x800000008
+end next
+block: 0x800000008
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end coalesce
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0xa1f6d94b963e0b3b, prev: 0x14704f8a5d791845, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0xa8b8a0fa409d624d, prev: 0x5dd631b4ff8fd5e2, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000008, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000008
+block: 0x800000538
+end check
+end free
+start find_fit
+before remove_free_block
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0xa1f6d94b963e0b3b, prev: 0x14704f8a5d791845, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x4022321ebbe1e2c9, prev: 0x804b225521e64cdc, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000008, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000008
+block: 0x800000538
+end check
+start remove_free_block
+block: 0x800000008
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0xa1f6d94b963e0b3b, prev: 0x14704f8a5d791845, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x4022321ebbe1e2c9, prev: 0x804b225521e64cdc, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+end find_fit, success
+before place
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0xa1f6d94b963e0b3b, prev: 0x14704f8a5d791845, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x4022321ebbe1e2c9, prev: 0x804b225521e64cdc, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end place
+malloc, size: 0x80
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x180, next: 0x800000538, prev: 0x800000000, foot: 0x180
+used block pos: 0x800000218, header: 0x91, next: 0xa1f6d94b963e0b3b, prev: 0x14704f8a5d791845, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x4022321ebbe1e2c9, prev: 0x804b225521e64cdc, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+start free
+start coalesce
+block: 0x800000218
+end next
+block: 0x800000218
+1
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0xb85d89caf6a81a80, prev: 0x5a4843c526528d19, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x4022321ebbe1e2c9, prev: 0x804b225521e64cdc, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+end free
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x91, next: 0xb85d89caf6a81a80, prev: 0x5a4843c526528d19, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x4022321ebbe1e2c9, prev: 0x804b225521e64cdc, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+start remove_free_block
+block: 0x800000538
+prev: 0x800000098, prevnext: 0x8000000a8
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x91, next: 0xb85d89caf6a81a80, prev: 0x5a4843c526528d19, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x4022321ebbe1e2c9, prev: 0x804b225521e64cdc, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x91, next: 0xb85d89caf6a81a80, prev: 0x5a4843c526528d19, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x4022321ebbe1e2c9, prev: 0x804b225521e64cdc, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000098
+end insert_free_block
+end place
+malloc, size: 0x300
+used block pos: 0x800000008, header: 0x91, next: 0xb85d89caf6a81a80, prev: 0x5a4843c526528d19, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000848, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x4022321ebbe1e2c9, prev: 0x804b225521e64cdc, foot: 0x291
+used block pos: 0x800000538, header: 0x311, next: 0x800000000, prev: 0x800000098, foot: 0x311
+free block pos: 0x800000848, header: 0x3f7c0, next: 0x800000098, prev: 0x800000000, foot: 0x3f7c0
+last_listp pos: 0x800040008
+block: 0x800000848
+block: 0x800000098
+end check
+start free
+start coalesce
+block: 0x8000002a8
+end next
+block: 0x8000002a8
+1
+start remove_free_block
+block: 0x800000098
+prev: 0x800000848, prevnext: 0x800000858
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000848
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0xb85d89caf6a81a80, prev: 0x5a4843c526528d19, foot: 0x91
+free block pos: 0x800000098, header: 0x4a0, next: 0x800000848, prev: 0x800000000, foot: 0x4a0
+used block pos: 0x800000538, header: 0x311, next: 0x4022321ebbe1e2c9, prev: 0x804b225521e64cdc, foot: 0x311
+free block pos: 0x800000848, header: 0x3f7c0, next: 0x800000000, prev: 0x800000098, foot: 0x3f7c0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000848
+end check
+end free
+start free
+start coalesce
+block: 0x800000538
+0
+start remove_free_block
+block: 0x800000848
+prev: 0x800000098, prevnext: 0x8000000a8
+end remove_free_block
+one next
+end next
+block: 0x800000538
+0
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0xb85d89caf6a81a80, prev: 0x5a4843c526528d19, foot: 0x91
+free block pos: 0x800000098, header: 0x3ff70, next: 0x800000000, prev: 0x800000000, foot: 0x3ff70
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+end free
+start free
+start coalesce
+block: 0x800000008
+0
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one next
+end next
+block: 0x800000008
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end coalesce
+free block pos: 0x800000008, header: 0x40000, next: 0x800000000, prev: 0x800000000, foot: 0x40000
+last_listp pos: 0x800040008
+block: 0x800000008
+end check
+end free
+before place
+free block pos: 0x800000008, header: 0x40000, next: 0x800000000, prev: 0x800000000, foot: 0x40000
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x200
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+block: 0x800000218
+end check
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+block: 0x800000218
+end check
+start remove_free_block
+block: 0x800000218
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x80
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+block: 0x8000002a8
+end check
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+block: 0x8000002a8
+end check
+start remove_free_block
+block: 0x8000002a8
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x280
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+start free
+start coalesce
+block: 0x800000008
+end next
+block: 0x800000008
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end coalesce
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000008, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000008
+block: 0x800000538
+end check
+end free
+start find_fit
+before remove_free_block
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000008, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000008
+block: 0x800000538
+end check
+start remove_free_block
+block: 0x800000008
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+end find_fit, success
+before place
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end place
+malloc, size: 0x80
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x180, next: 0x800000538, prev: 0x800000000, foot: 0x180
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+start free
+start coalesce
+block: 0x800000218
+end next
+block: 0x800000218
+1
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+end free
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+start remove_free_block
+block: 0x800000538
+prev: 0x800000098, prevnext: 0x8000000a8
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000098
+end insert_free_block
+end place
+malloc, size: 0x300
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000848, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+used block pos: 0x800000538, header: 0x311, next: 0x800000000, prev: 0x800000098, foot: 0x311
+free block pos: 0x800000848, header: 0x3f7c0, next: 0x800000098, prev: 0x800000000, foot: 0x3f7c0
+last_listp pos: 0x800040008
+block: 0x800000848
+block: 0x800000098
+end check
+start free
+start coalesce
+block: 0x8000002a8
+end next
+block: 0x8000002a8
+1
+start remove_free_block
+block: 0x800000098
+prev: 0x800000848, prevnext: 0x800000858
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000848
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x4a0, next: 0x800000848, prev: 0x800000000, foot: 0x4a0
+used block pos: 0x800000538, header: 0x311, next: 0x800000000, prev: 0x800000000, foot: 0x311
+free block pos: 0x800000848, header: 0x3f7c0, next: 0x800000000, prev: 0x800000098, foot: 0x3f7c0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000848
+end check
+end free
+start free
+start coalesce
+block: 0x800000538
+0
+start remove_free_block
+block: 0x800000848
+prev: 0x800000098, prevnext: 0x8000000a8
+end remove_free_block
+one next
+end next
+block: 0x800000538
+0
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x3ff70, next: 0x800000000, prev: 0x800000000, foot: 0x3ff70
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+end free
+start free
+start coalesce
+block: 0x800000008
+0
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one next
+end next
+block: 0x800000008
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end coalesce
+free block pos: 0x800000008, header: 0x40000, next: 0x800000000, prev: 0x800000000, foot: 0x40000
+last_listp pos: 0x800040008
+block: 0x800000008
+end check
+end free
+.before place
+free block pos: 0x800000008, header: 0x40000, next: 0x800000000, prev: 0x800000000, foot: 0x40000
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x200
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+block: 0x800000218
+end check
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+block: 0x800000218
+end check
+start remove_free_block
+block: 0x800000218
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x80
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+block: 0x8000002a8
+end check
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+block: 0x8000002a8
+end check
+start remove_free_block
+block: 0x8000002a8
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x280
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+start free
+start coalesce
+block: 0x800000008
+end next
+block: 0x800000008
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end coalesce
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000008, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000008
+block: 0x800000538
+end check
+end free
+start find_fit
+before remove_free_block
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000008, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000008
+block: 0x800000538
+end check
+start remove_free_block
+block: 0x800000008
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+end find_fit, success
+before place
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end place
+malloc, size: 0x80
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x180, next: 0x800000538, prev: 0x800000000, foot: 0x180
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+start free
+start coalesce
+block: 0x800000218
+end next
+block: 0x800000218
+1
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+end free
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+start remove_free_block
+block: 0x800000538
+prev: 0x800000098, prevnext: 0x8000000a8
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000098
+end insert_free_block
+end place
+malloc, size: 0x300
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000848, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+used block pos: 0x800000538, header: 0x311, next: 0x800000000, prev: 0x800000098, foot: 0x311
+free block pos: 0x800000848, header: 0x3f7c0, next: 0x800000098, prev: 0x800000000, foot: 0x3f7c0
+last_listp pos: 0x800040008
+block: 0x800000848
+block: 0x800000098
+end check
+start free
+start coalesce
+block: 0x8000002a8
+end next
+block: 0x8000002a8
+1
+start remove_free_block
+block: 0x800000098
+prev: 0x800000848, prevnext: 0x800000858
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000848
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x4a0, next: 0x800000848, prev: 0x800000000, foot: 0x4a0
+used block pos: 0x800000538, header: 0x311, next: 0x800000000, prev: 0x800000000, foot: 0x311
+free block pos: 0x800000848, header: 0x3f7c0, next: 0x800000000, prev: 0x800000098, foot: 0x3f7c0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000848
+end check
+end free
+start free
+start coalesce
+block: 0x800000538
+0
+start remove_free_block
+block: 0x800000848
+prev: 0x800000098, prevnext: 0x8000000a8
+end remove_free_block
+one next
+end next
+block: 0x800000538
+0
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x3ff70, next: 0x800000000, prev: 0x800000000, foot: 0x3ff70
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+end free
+start free
+start coalesce
+block: 0x800000008
+0
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one next
+end next
+block: 0x800000008
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end coalesce
+free block pos: 0x800000008, header: 0x40000, next: 0x800000000, prev: 0x800000000, foot: 0x40000
+last_listp pos: 0x800040008
+block: 0x800000008
+end check
+end free
+before place
+free block pos: 0x800000008, header: 0x40000, next: 0x800000000, prev: 0x800000000, foot: 0x40000
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x200
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+block: 0x800000218
+end check
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+block: 0x800000218
+end check
+start remove_free_block
+block: 0x800000218
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x80
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+block: 0x8000002a8
+end check
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+block: 0x8000002a8
+end check
+start remove_free_block
+block: 0x8000002a8
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x280
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+start free
+start coalesce
+block: 0x800000008
+end next
+block: 0x800000008
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end coalesce
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000008, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000008
+block: 0x800000538
+end check
+end free
+start find_fit
+before remove_free_block
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000008, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000008
+block: 0x800000538
+end check
+start remove_free_block
+block: 0x800000008
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+end find_fit, success
+before place
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end place
+malloc, size: 0x80
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x180, next: 0x800000538, prev: 0x800000000, foot: 0x180
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+start free
+start coalesce
+block: 0x800000218
+end next
+block: 0x800000218
+1
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+end free
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+start remove_free_block
+block: 0x800000538
+prev: 0x800000098, prevnext: 0x8000000a8
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000098
+end insert_free_block
+end place
+malloc, size: 0x300
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000848, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+used block pos: 0x800000538, header: 0x311, next: 0x800000000, prev: 0x800000098, foot: 0x311
+free block pos: 0x800000848, header: 0x3f7c0, next: 0x800000098, prev: 0x800000000, foot: 0x3f7c0
+last_listp pos: 0x800040008
+block: 0x800000848
+block: 0x800000098
+end check
+start free
+start coalesce
+block: 0x8000002a8
+end next
+block: 0x8000002a8
+1
+start remove_free_block
+block: 0x800000098
+prev: 0x800000848, prevnext: 0x800000858
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000848
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x4a0, next: 0x800000848, prev: 0x800000000, foot: 0x4a0
+used block pos: 0x800000538, header: 0x311, next: 0x800000000, prev: 0x800000000, foot: 0x311
+free block pos: 0x800000848, header: 0x3f7c0, next: 0x800000000, prev: 0x800000098, foot: 0x3f7c0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000848
+end check
+end free
+start free
+start coalesce
+block: 0x800000538
+0
+start remove_free_block
+block: 0x800000848
+prev: 0x800000098, prevnext: 0x8000000a8
+end remove_free_block
+one next
+end next
+block: 0x800000538
+0
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x3ff70, next: 0x800000000, prev: 0x800000000, foot: 0x3ff70
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+end free
+start free
+start coalesce
+block: 0x800000008
+0
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one next
+end next
+block: 0x800000008
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end coalesce
+free block pos: 0x800000008, header: 0x40000, next: 0x800000000, prev: 0x800000000, foot: 0x40000
+last_listp pos: 0x800040008
+block: 0x800000008
+end check
+end free
+before place
+free block pos: 0x800000008, header: 0x40000, next: 0x800000000, prev: 0x800000000, foot: 0x40000
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x200
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+block: 0x800000218
+end check
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+block: 0x800000218
+end check
+start remove_free_block
+block: 0x800000218
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+free block pos: 0x800000218, header: 0x3fdf0, next: 0x800000000, prev: 0x800000000, foot: 0x3fdf0
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x80
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+block: 0x8000002a8
+end check
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+block: 0x8000002a8
+end check
+start remove_free_block
+block: 0x8000002a8
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+free block pos: 0x8000002a8, header: 0x3fd60, next: 0x800000000, prev: 0x800000000, foot: 0x3fd60
+last_listp pos: 0x800040008
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end place
+malloc, size: 0x280
+used block pos: 0x800000008, header: 0x211, next: 0x800000000, prev: 0x800000000, foot: 0x211
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+start free
+start coalesce
+block: 0x800000008
+end next
+block: 0x800000008
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end coalesce
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000008, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000008
+block: 0x800000538
+end check
+end free
+start find_fit
+before remove_free_block
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000008, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000008
+block: 0x800000538
+end check
+start remove_free_block
+block: 0x800000008
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+after remove_free_block
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+end find_fit, success
+before place
+free block pos: 0x800000008, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000000, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000538
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end place
+malloc, size: 0x80
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x180, next: 0x800000538, prev: 0x800000000, foot: 0x180
+used block pos: 0x800000218, header: 0x91, next: 0x800000000, prev: 0x800000000, foot: 0x91
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+start free
+start coalesce
+block: 0x800000218
+end next
+block: 0x800000218
+1
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000538
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+end free
+start find_fit
+before remove_free_block
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000538, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000538
+end check
+start remove_free_block
+block: 0x800000538
+prev: 0x800000098, prevnext: 0x8000000a8
+end remove_free_block
+after remove_free_block
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+end find_fit, success
+before place
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000000, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+free block pos: 0x800000538, header: 0x3fad0, next: 0x800000000, prev: 0x800000098, foot: 0x3fad0
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+start place
+start insert_free_block
+head: 0x800000000
+next: 0x800000098
+end insert_free_block
+end place
+malloc, size: 0x300
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x210, next: 0x800000000, prev: 0x800000848, foot: 0x210
+used block pos: 0x8000002a8, header: 0x291, next: 0x800000000, prev: 0x800000000, foot: 0x291
+used block pos: 0x800000538, header: 0x311, next: 0x800000000, prev: 0x800000098, foot: 0x311
+free block pos: 0x800000848, header: 0x3f7c0, next: 0x800000098, prev: 0x800000000, foot: 0x3f7c0
+last_listp pos: 0x800040008
+block: 0x800000848
+block: 0x800000098
+end check
+start free
+start coalesce
+block: 0x8000002a8
+end next
+block: 0x8000002a8
+1
+start remove_free_block
+block: 0x800000098
+prev: 0x800000848, prevnext: 0x800000858
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000848
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x4a0, next: 0x800000848, prev: 0x800000000, foot: 0x4a0
+used block pos: 0x800000538, header: 0x311, next: 0x800000000, prev: 0x800000000, foot: 0x311
+free block pos: 0x800000848, header: 0x3f7c0, next: 0x800000000, prev: 0x800000098, foot: 0x3f7c0
+last_listp pos: 0x800040008
+block: 0x800000098
+block: 0x800000848
+end check
+end free
+start free
+start coalesce
+block: 0x800000538
+0
+start remove_free_block
+block: 0x800000848
+prev: 0x800000098, prevnext: 0x8000000a8
+end remove_free_block
+one next
+end next
+block: 0x800000538
+0
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one prev
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end coalesce
+used block pos: 0x800000008, header: 0x91, next: 0x800000538, prev: 0x800000000, foot: 0x91
+free block pos: 0x800000098, header: 0x3ff70, next: 0x800000000, prev: 0x800000000, foot: 0x3ff70
+last_listp pos: 0x800040008
+block: 0x800000098
+end check
+end free
+start free
+start coalesce
+block: 0x800000008
+0
+start remove_free_block
+block: 0x800000098
+prev: 0x800000000, prevnext: 0x800000000
+end remove_free_block
+one next
+end next
+block: 0x800000008
+end prev
+start insert_free_block
+head: 0x800000000
+next: 0x800000000
+end insert_free_block
+end coalesce
+free block pos: 0x800000008, header: 0x40000, next: 0x800000000, prev: 0x800000000, foot: 0x40000
+last_listp pos: 0x800040008
+block: 0x800000008
+end check
+end free
+
+Results for mm malloc:
+  valid    util     ops   msecs    Kops  trace
+ * yes     0.3%       8     1.564      5 ./b.rep
+ 1  1      0.3%       8     1.564      5
+
+Average utilization = 0.3%. Average throughput = 5 Kops/sec
+Perf index = 0.0 (util) + 0.0 (thru) = 0.0/100

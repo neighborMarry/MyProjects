@@ -1,0 +1,11 @@
+feature_size=2005
+
+feature_filename=./data/feature_train
+output_filename=./train.out
+
+alpha=0.01
+lambda=0.0001
+iter_cnt=800
+batch_size=1000
+thread_cnt=8
+momentum=0.5
