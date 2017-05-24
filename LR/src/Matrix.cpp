@@ -19,9 +19,7 @@ SparseMat *create_sparse_matrix(
         Sample *s = samples[i];
         // p: feat id, value
         for (auto &p : s->feat) {
-            if (p.first < 2000) {
-                t.push_back(T(p.first, i, p.second));
-            }
+            t.push_back(T(p.first, i, p.second));
         }
     }
     ret->setFromTriplets(t.begin(), t.end());
@@ -40,9 +38,7 @@ SparseMat *create_sparse_matrix(
         Sample *s = samples[idx[i]];
         // p: feat id, value
         for (auto &p : s->feat) {
-            if (p.first < 2000) {
-                t.push_back(T(p.first, i - st, p.second));
-            }
+            t.push_back(T(p.first, i - st, p.second));
         }
     }
     ret->setFromTriplets(t.begin(), t.end());
